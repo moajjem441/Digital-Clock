@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+<body>
+
+    <div class="container min-h-[100vh] max-w-full flex  justify-center items-center bg-gray-600">
+            
+<div id="clock" class=" grid auto-cols-max grid-flow-col gap-5 text-center">
+  
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <span class="countdown font-mono text-5xl">
+      <span id="hour" style="--value:10;" aria-live="polite" aria-label="10">10</span>
+    </span>
+    hours
+  </div>
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <span class="countdown font-mono text-5xl">
+      <span id="min" style="--value:24;" aria-live="polite" aria-label="24">24</span>
+    </span>
+    min
+  </div>
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <span class="countdown font-mono text-5xl">
+      <span id="sec" style="--value:59;" aria-live="polite" aria-label="59">59</span>
+    </span>
+    sec
+  </div>
+</div>
+    </div>
+
+<script src="./clock2.js"></script>
+</body>
+</html>
